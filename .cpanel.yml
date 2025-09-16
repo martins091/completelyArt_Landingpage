@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOY_DIR=/public_html
+    - /bin/cp -R * $DEPLOY_DIR
