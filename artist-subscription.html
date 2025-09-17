@@ -17,28 +17,56 @@
 </head>
 
 <body>
-	<header class="w-full bg-white shadow-md z-50">
-		<nav class="h-[9vh] max-w-7xl mx-auto flex items-center justify-between px-6">
+	<header class="w-full shadow-md z-50">
+		<nav class="h-[8vh] md:h-[9vh]  max-w-7xl mx-auto flex items-center justify-between px-3 md:px-6">
 			<a href="/index.html">
-				<img src="./assets/images/logo.png" alt="CompletelyArt-logo" class="size-14" />
+				<img src="./assets/images/plain-white-logo.png" alt="CompletelyArt-logo" class="h-16 md:w-40 object-contain">
 			</a>
-			<ul class="nav-links hidden md:flex justify-between w-[40%]">
-				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300">
-					<a href="/index.html">Home</a>
-				</li>
-				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300">
-					<a href="#about">About Us</a>
-				</li>
-				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300">
-					<a href="buyer-subscription.html">Buyers</a>
-				</li>
-				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300">
-					<a href="artist-subscription.html">Artists</a>
+			<ul class="hidden nav-links md:flex  justify-between w-[40%] ">
+				<li class="text-lg font-medium  transition-all ease-in-out duration-300 "><a
+						href="/index.html">Home</a></li>
+				<li class="text-lg font-medium transition-all ease-in-out duration-300 "><a
+						href="buyer-subscription.html#about">About Us</a></li>
+				<li class="text-lg font-medium transition-all ease-in-out duration-300 "><a
+						href="buyer-subscription.html">Buyers</a></li>
+				<li class="text-lg font-medium  transition-all ease-in-out duration-300 "><a
+						href="artist-subscription.html">Artists</a></li>
+			</ul>
+			<!-- Contact Button -->
+			<a href="mailto:info@completelyart.com" target="_blank"
+				class="hidden md:inline-block text-sm lg:text-lg font-semibold from-[#a04ef7] to-[#e467ee] bg-gradient-to-tr text-white px-3 py-2 rounded-lg hover:scale-95 transition-all ease-in-out duration-300">
+				Contact Us
+			</a>
+
+			<!-- Mobile Menu Button -->
+			<button id="mobile-menu-button"
+				class="flex flex-col justify-center items-center space-y-1 w-8 h-6 md:hidden focus:outline-none rounded-sm">
+				<span class="w-5 h-[2px] menu-bar transition-all ease-in-out duration-500"></span>
+				<span class="w-5 h-[2px] menu-bar transition-all ease-in-out duration-500"></span>
+				<span class="w-5 h-[2px] menu-bar transition-all ease-in-out duration-500"></span>
+			</button>
+		</nav>
+
+		<!-- Mobile Menu -->
+		<div id="mobile-menu"
+			class="overflow-hidden max-h-0 md:hidden  shadow-lg sticky top-[8vh] left-0 w-full z-50 transition-all duration-500">
+			<ul class="flex flex-col items-center py-4 space-y-6">
+				<li class="text-lg font-medium transition-all ease-in-out duration-300"><a
+						href="/index.html">Home</a></li>
+				<li class="text-lg font-medium transition-all ease-in-out duration-300"><a
+						href="buyer-subscription.html#about">About Us</a></li>
+				<li class="text-lg font-medium transition-all ease-in-out duration-300"><a
+						href="buyer-subscription.html">Buyers</a></li>
+				<li class="text-lg font-medium transition-all ease-in-out duration-300"><a
+						href="artist-subscription.html">Artists</a></li>
+				<li>
+					<a href="mailto:info@completelyart.com" target="_blank"
+				class=" text-sm lg:text-lg font-semibold from-[#a04ef7] to-[#e467ee] bg-gradient-to-tr text-white px-3 py-2 rounded-lg hover:scale-95 transition-all ease-in-out duration-300">
+				Contact Us
+			</a>
 				</li>
 			</ul>
-			<a href="#artist-waitlist"
-				class="text-sm lg:text-lg font-semibold bg-[#4B0082] text-white px-3 py-2 rounded-lg hover:bg-[#FFB085] hover:text-[#4b0082] transition-all ease-in-out duration-300">Join
-				Waitlist</a>
+		</div>
 		</nav>
 	</header>
 	<main class="pb-4 md:pb-12">
@@ -181,39 +209,37 @@
 			</div>
 		</section>
 	</main>
-	<footer class="bg-[#4B0082] text-white py-10">
+	<footer class="py-4 md:py-10">
 		<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+
 			<!-- Left side: Logo + text -->
 			<div class="text-center md:text-left">
-				<img src="./logo.png" alt="CompletelyArt-logo" class="size-12 mx-auto md:mx-0 mb-4" />
+				<img src="./assets/images/plain-white-logo.png" alt="CompletelyArt-logo" class="size-20 mx-auto md:mx-0 mb-4">
 				<p class="text-gray-300 max-w-md mx-auto md:mx-0">
-					CompletelyArt is where creativity meets opportunity. Join us in
-					building a world where every artist finds their audience.
+					CompletelyArt is where creativity meets opportunity.
+					Join us in building a world where every artist finds their audience.
 				</p>
 			</div>
 
 			<!-- Right side: Social icons -->
-			<div class="flex justify-center md:justify-end gap-6">
-				<a href="https://x.com/completelyartng" target="_blank" class="hover:text-[#FFB085] transition">
+			<div class="  flex justify-center md:justify-end gap-6">
+				<a href="https://x.com/completelyartng" target="_blank" class="  duration-300 social-icons">
 					<i class="fab fa-x-twitter text-2xl"></i>
 				</a>
-				<a href="https://www.facebook.com/share/1Jgv2uJ8Gs/" target="_blank"
-					class="hover:text-[#FFB085] transition">
+				<a href="https://www.facebook.com/share/1Jgv2uJ8Gs/" target="_blank" class=" duration-300 social-icons">
 					<i class="fab fa-facebook-f text-2xl"></i>
 				</a>
-				<a href="https://www.instagram.com/completelyartng/" target="_blank"
-					class="hover:text-[#FFB085] transition">
+				<a href="https://www.instagram.com/completelyartng/" target="_blank" class=" duration-300 social-icons ">
 					<i class="fab fa-instagram text-2xl"></i>
 				</a>
-				<a href="https://www.linkedin.com/company/completelyart/" target="_blank"
-					class="hover:text-[#FFB085] transition">
+				<a href="https://www.linkedin.com/company/completelyart/" target="_blank" class=" duration-300 social-icons ">
 					<i class="fab fa-linkedin-in text-2xl"></i>
 				</a>
 			</div>
 		</div>
 
 		<!-- Bottom -->
-		<div class="text-center text-gray-400 mt-8 text-sm">
+		<div class="text-center mt-4 md:mt-8 text-sm">
 			© 2025 CompletelyArt. All rights reserved.
 		</div>
 	</footer>

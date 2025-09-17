@@ -1,7 +1,35 @@
 body{
-    background-color: #FAF9F6;
+    background-color: #f0e2fe;
+}
+header{
+    background-color: #2e5ef7;
+    color: #e0befe;
+}
+.nav-links{
+    color: #e0befe;
+}
+.nav-links li:hover{
+    color: #e467ee;
+}
+#mobile-menu-button:hover{
+    background-color: #e467ee;
+}
+#mobile-menu{
+    background-color: #2e5ef7;
+
+}
+.menu-bar{
+    background-color: #e0befe ;
 }
 
+
+footer{
+    background-color: #2e5ef7;
+    color: #e0befe;
+}
+.social-icons:hover{
+    color: #e467ee;
+}
 .artist-subscription{
     background-image: url("../images/artist-background.webp");
     background-size: cover;
