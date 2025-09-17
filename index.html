@@ -4,103 +4,209 @@
 		<title>CompletelyArt - A new way to discover Nigerian art</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<!-- Fonts-->
-		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
-		<!-- Vendors-->
-		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
-		<link rel="stylesheet" type="text/css" href="assets/vendors/YTPlayer/css/jquery.mb.YTPlayer.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/vendors/vegas/vegas.min.css">
-		<!-- App & fonts-->
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900|Work+Sans:300,400,500,700">
-		<link rel="icon" type="image/x-icon" href="favicon.png">
-		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<![endif]-->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900|Work+Sans:300,400,500,700">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	
 	<body>
-		<div class="page-wrap" id="root">
-			<!-- Content-->
-			<div class="md-content">
-				
-				<!-- hero -->
-				<div class="hero md-skin-dark" style="background-image:url('bg.png');">
-					
-					<!-- header -->
-					<div class="header">
-						<div class="header__left"><img src="email.png"> <span><a href="mailto:info@completelyart.com" target="_blank">info@completelyart.ng</a></span>
-						</div>
-						<div class="header__social">
-							
-							<!-- social-icon -->
-							<a class="social-icon social-icon__rounded" href="https://www.facebook.com/share/1Jgv2uJ8Gs/" target="_blank"><i class="fa fa-facebook"></i>
-							</a><!-- End / social-icon -->
-							
-							
-							<!-- social-icon -->
-							<a class="social-icon social-icon__rounded" href="https://x.com/completelyartng" target="_blank">X
-							</a><!-- End / social-icon -->
-							
-							
-							<!-- social-icon -->
-							<a class="social-icon social-icon__rounded" href="https://www.instagram.com/completelyartng/" target="_blank"><i class="fa fa-instagram"></i>
-							</a><!-- End / social-icon -->
-							
-							
-							<!-- social-icon -->
-							<a class="social-icon social-icon__rounded" href="https://www.linkedin.com/company/completelyart/" target="_blank"><i class="fa fa-linkedin"></i>
-							</a><!-- End / social-icon -->
-							
-						</div>
-					</div><!-- End / header -->
-					
-					<div class="container">
-						<div class="hero__wrapper">
-							<div class="row">
-								<div class="col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 ">
-									<div class="hero__title_inner">
-										<span class="hero__logo"><a href="index.html"> <img src="logo.png" alt="logo"> </a></span>
-									</div>
+	<header class="w-full bg-white shadow-md z-50">
+		<nav class="h-[9vh] max-w-7xl mx-auto flex items-center justify-between px-6">
+			<a href="/index.html">
+				<img src="./assets/images/logo.png" alt="CompletelyArt-logo" class="size-14 ">
+			</a>
+			<ul class="hidden nav-links md:flex  justify-between w-[40%] ">
+				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300 "><a
+						href="/index.html">Home</a></li>
+				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300 "><a
+						href="#about">About Us</a></li>
+				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300 "><a
+						href="buyer-subscription.html">Buyers</a></li>
+				<li class="text-lg font-medium hover:text-[#4B0082] transition-all ease-in-out duration-300 "><a
+						href="artist-subscription.html">Artists</a></li>
+			</ul>
+			<a href="mailto:info@completelyart.com"
+			target='_blank' 
+				class="text-sm lg:text-lg font-semibold bg-[#4B0082] text-white px-3 py-2 rounded-lg hover:bg-[#FFB085] hover:text-[#4b0082] transition-all ease-in-out duration-300  ">
+				Contact Us</a>
+		</nav>
+	</header>
+	<main class="pb-12">
+		<section class="h-[100vh] md:h-[91vh] bg-[#FFB085] relative">
+			<div class="absolute inset-0 bg-black/50"></div>
 
-									<!-- countdown__module hide undefined -->
-									<div class="countdown__module hide" data-date="2025/11/17">
-										<p><span>%D</span> Days</p>
-										<p><span>%H</span> Hours</p>
-										<p><span>%M</span> Minutes</p>
-										<p><span>%S</span> Seconds</p>
-									</div><!-- End / countdown__module hide undefined -->
-								</div>
-							</div>
-							
-							<div class="col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 " style="text-align: center;">
-								<h1 class="hero__title">A new way to discover Nigerian art</h1>
-								<p class="hero__text">CompletelyArt's web application goes live this <b>November 17th!</b> Be part of the community, a trusted online marketplace connecting art lovers to talented Nigerian visual artists. Whether you're a visual artist looking for visibility or a buyer in search of original, custom-made digital or traditional artwork, we are creating this platform for you. Join the waitlist now for early access and exclusive web application launch updates!</p>
-							</div>
-
-							
-							<div class="buttons">
-								<a href="buyer-subscription.html" class="pry-btn">Join As A Buyer</a> <a href="artist-subscription.html" class="sec-btn">Join As An Artist</a>
-							</div>
-
-						</div>
-					</div>
-				</div><!-- End / hero -->
-				
+			<!-- Text Content -->
+			<div data-aos="fade-down" data-aos-duration="1000"
+				class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+				<h1 data-aos="zoom-in-up" class="text-4xl md:text-8xl font-bold mb-4">
+					Art That Connects
+				</h1>
+				<p class="text-lg md:text-xl max-w-2xl mb-6">
+					CompletelyArt brings artists and art lovers together. Explore authentic works, showcase your creativity, and discover pieces that inspire — all in one trusted space.
+				</p>
+				<div class="flex justify-center items-center space-x-5">
+					<a href="./artist-subscription.html"
+					class="px-6 py-3  border-[2px] border-[#4b0082] bg-[#4B0082] text-white hover:bg-[#FFB085] hover:text-[#4b0082] hover:rounded-md rounded-full text-lg font-semibold transition-all duration-500 ease-in-out">
+					Join as an Artist
+				</a>
+				<a href="./buyer-subscription.html"
+					class="px-6 py-3 border-[2px] border-[#4b0082] text-[#4B0082] bg-white hover:bg-[#FFB085] hover:text-[#4b0082] hover:rounded-md rounded-full text-lg font-semibold transition-all ease-in-out duration-500">
+					Join as an Art Lover
+				</a>
+				</div>
 			</div>
-			<!-- End / Content-->
+		</section>
+		<section class="py-20 bg-[#FAF9F6]">
+			<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start text-center md:text-left">
+				<!-- Vision -->
+				<div class=" shadow-sm p-6 rounded-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+					<h2 class="text-3xl md:text-4xl font-bold text-[#4B0082] mb-4">
+						Our Vision
+					</h2>
+					<p class="text-lg leading-relaxed text-gray-700 max-w-md">
+						To create a world where every artist finds an audience,
+						and every art lover discovers inspiration that feels personal and unforgettable.
+					</p>
+				</div>
+
+				<!-- Mission -->
+				<div class=" shadow-sm p-6 rounded-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+					<h2 class="text-3xl md:text-4xl font-bold text-[#4B0082] mb-4">
+						Our Mission
+					</h2>
+					<p class="text-lg leading-relaxed text-gray-700 max-w-md">
+						To empower artists by giving them visibility,
+						while helping art lovers connect with authentic, original works they’ll truly treasure.
+					</p>
+				</div>
+
+			</div>
+		</section>
+		<section class="py-20 bg-[#FAF9F6] px-6" id="about">
+			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+				<!-- Founder Photo -->
+				<div class="flex justify-center" data-aos="fade-right" data-aos-duration="1000">
+					<img src="./assets/images/founder's image.jpg" alt="Founder of CompletelyArt"
+						class="rounded-2xl shadow-lg w-[500px] h-[600px] object-cover">
+				</div>
+
+				<!-- Founder Story -->
+				<div data-aos="fade-left" data-aos-duration="1000">
+					<h2 class="text-3xl font-bold text-[#4B0082] mb-4">The Story Behind CompletelyArt</h2>
+					<p class="text-lg text-gray-700 leading-relaxed mb-6">
+						CompletelyArt was founded by <span class="font-semibold">[Founder’s Name]</span>,
+						an art enthusiast who saw how difficult it was for emerging artists to get discovered.
+						Driven by a passion for creativity and connection, they envisioned a platform where
+						artists and collectors meet without barriers.
+					</p>
+					<p class="text-lg text-gray-700 leading-relaxed">
+						What started as a simple idea grew into a mission: to bridge the gap between
+						creators and collectors while making art accessible to everyone.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="py-10 w-full max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8" data-aos="fade-up"
+			data-aos-duration="1500">
+
+			<div id="artist-waitlist"
+				class="bg-[#4B0082] mx-auto w-full max-w-4xl py-10 sm:py-14 px-4 sm:px-8 rounded-2xl">
+				<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
+					Be Part of the Journey
+				</h2>
+
+				<p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-200 mb-8 leading-relaxed">
+					Whether you’re an artist ready to showcase your work or a collector looking for inspiration,
+					join our waitlist today and help shape the future of CompletelyArt.
+				</p>
+
+				<!-- Email Input + Button -->
+				<form id="buyer-waitlist-form" class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4" method="post"
+					action="https://completelyart.us1.list-manage.com/subscribe/post?u=4b5d3fbd24101f9efefcb0228&id=8477ddd1d0&f_id=004f66e0f0"
+					target="_self" novalidate>
+					<!-- Email Input -->
+					<input type="email" name="EMAIL" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-full bg-white text-gray-900 placeholder-gray-500
+                    focus:outline-none focus:ring-2 focus:ring-[#FFB085] text-sm sm:text-base"
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+
+					<!-- Hidden fields (Mailchimp requires these) -->
+					<input type="hidden" name="tags" value="5778951,5778952">
+					<div aria-hidden="true" style="position:absolute; left:-5000px;">
+						<input type="text" name="b_4b5d3fbd24101f9efefcb0228_8477ddd1d0" tabindex="-1" value="">
+					</div>
+
+					<!-- Custom redirect after submission -->
+					<input type="hidden" name="redirect" value="https://completelyart.ng">
+
+					<!-- Button -->
+					<button type="submit" class="px-6 py-3 bg-[#CDA4DE] text-[#4B0082] rounded-full text-sm sm:text-base md:text-lg font-semibold shadow-md 
+                     transition-all duration-300 hover:bg-[#FFB085] hover:text-[#4b0082]">
+						Join Waitlist
+					</button>
+				</form>
+			</div>
+		</section>
+
+	</main>
+	<footer class="bg-[#4B0082] text-white py-10">
+		<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+
+			<!-- Left side: Logo + text -->
+			<div class="text-center md:text-left">
+				<img src="./logo.png" alt="CompletelyArt-logo" class="size-12 mx-auto md:mx-0 mb-4">
+				<p class="text-gray-300 max-w-md mx-auto md:mx-0">
+					CompletelyArt is where creativity meets opportunity.
+					Join us in building a world where every artist finds their audience.
+				</p>
+			</div>
+
+			<!-- Right side: Social icons -->
+			<div class="flex justify-center md:justify-end gap-6">
+				<a href="https://x.com/completelyartng" target="_blank" class="hover:text-[#FFB085] transition">
+					<i class="fab fa-x-twitter text-2xl"></i>
+				</a>
+				<a href="https://www.facebook.com/share/1Jgv2uJ8Gs/" target="_blank"
+					class="hover:text-[#FFB085] transition">
+					<i class="fab fa-facebook-f text-2xl"></i>
+				</a>
+				<a href="https://www.instagram.com/completelyartng/" target="_blank"
+					class="hover:text-[#FFB085] transition">
+					<i class="fab fa-instagram text-2xl"></i>
+				</a>
+				<a href="https://www.linkedin.com/company/completelyart/" target="_blank"
+					class="hover:text-[#FFB085] transition">
+					<i class="fab fa-linkedin-in text-2xl"></i>
+				</a>
+			</div>
 		</div>
-		<!-- Vendors-->
-		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/flat-surface-shader/fss.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/particles.js/particles.js"></script>
-		<script type="text/javascript" src="assets/vendors/waterpipe/waterpipe.js"></script>
-		<script type="text/javascript" src="assets/vendors/quietflow/quietflow.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/YTPlayer/jquery.mb.YTPlayer.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/vegas/vegas.min.js"></script>
-		<!-- App-->
-		<script type="text/javascript" src="assets/js/main.js"></script>
-	</body>
+
+		<!-- Bottom -->
+		<div class="text-center text-gray-400 mt-8 text-sm">
+			© 2025 CompletelyArt. All rights reserved.
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+
+		const form = document.querySelector('#buyer-waitlist-form');
+
+		form.addEventListener('submit', function (e) {
+			const email = form.querySelector('input[name="EMAIL"]').value.trim();
+			if (!email) {
+				e.preventDefault();
+				alert('Please enter your email');
+			}
+		});
+	</script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
 </html>
