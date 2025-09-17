@@ -328,6 +328,23 @@
           alert("Please enter your email");
         }
       });
+      const menuButton = document.getElementById('mobile-menu-button');
+		const mobileMenu = document.getElementById('mobile-menu');
+		const spans = menuButton.querySelectorAll('span');
+
+		menuButton.addEventListener('click', () => {
+			if (mobileMenu.style.maxHeight) {
+				// Collapse menu
+				mobileMenu.style.maxHeight = null;
+			} else {
+				// Expand menu to scrollHeight
+				mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+			}
+			spans[0].classList.toggle('rotate-45');
+			spans[0].classList.toggle('translate-y-1.5');
+			spans[1].classList.toggle('-rotate-45');
+			spans[2].classList.toggle('opacity-0');
+		})
     </script>
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
