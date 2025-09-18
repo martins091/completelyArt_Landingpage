@@ -18,12 +18,11 @@
 
 <body>
   <header class="w-full shadow-md z-50">
-    <nav class="h-[8vh] md:h-[9vh]  max-w-7xl mx-auto flex items-center justify-between px-3 md:px-6">
+    <nav class="h-[9vh] md:h-[9vh]  max-w-7xl mx-auto flex items-center justify-between px-3 md:px-6">
       <a href="/index.html">
-        <img src="./assets/images/plain-white-logo.png" alt="CompletelyArt-logo" class="h-16 md:w-40 object-contain">
+        <img src="./assets/images/plain-white-logo.png" alt="CompletelyArt-logo" class="h-16 w-32 md:w-40 object-contain">
       </a>
       <ul class="hidden nav-links md:flex  justify-between w-[40%] ">
-        <li class="text-lg font-medium  transition-all ease-in-out duration-300 "><a href="/index.html">Home</a></li>
         <li class="text-lg font-medium transition-all ease-in-out duration-300 "><a
             href="buyer-subscription.html#about">About Us</a></li>
         <li class="text-lg font-medium transition-all ease-in-out duration-300 "><a
@@ -36,7 +35,6 @@
         class="hidden md:inline-block text-sm lg:text-lg font-semibold from-[#a04ef7] to-[#e467ee] bg-gradient-to-tr text-white px-3 py-2 rounded-lg hover:scale-95 transition-all ease-in-out duration-300">
         Contact Us
       </a>
-
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-button"
         class="flex flex-col justify-center items-center space-y-1 w-8 h-6 md:hidden focus:outline-none rounded-sm">
@@ -45,12 +43,10 @@
         <span class="w-5 h-[2px] menu-bar transition-all ease-in-out duration-500"></span>
       </button>
     </nav>
-
     <!-- Mobile Menu -->
     <div id="mobile-menu"
       class="overflow-hidden max-h-0 md:hidden  shadow-lg sticky top-[8vh] left-0 w-full z-50 transition-all duration-500">
       <ul class="flex flex-col items-center py-4 space-y-6">
-        <li class="text-lg font-medium transition-all ease-in-out duration-300"><a href="/index.html">Home</a></li>
         <li class="text-lg font-medium transition-all ease-in-out duration-300"><a
             href="buyer-subscription.html#about">About Us</a></li>
         <li class="text-lg font-medium transition-all ease-in-out duration-300"><a
@@ -65,161 +61,160 @@
         </li>
       </ul>
     </div>
-    </nav>
   </header>
   <main class="">
-    <section class="buyer-background relative h-[100dvh] min-h-full lg:h-[91vh]">
-      <div class="absolute inset-0 bg-black/50"></div>
+    <section class="buyer-background relative h-auto min-h-screen  md:h-[91vh]  flex items-center justify-center">
+			<div class="absolute inset-0 bg-black/30"></div>
+			<!-- Text Content -->
+			<div data-aos="fade-down" data-aos-duration="500"
+				class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+				<h1 class="text-2xl md:text-5xl lg:text-6xl font-bold mb-4">
+					Find the Right Artist for Your Vision
+				</h1>
+				<p class="text-sm lg:text-xl max-w-2xl mb-6">
+					     Explore portfolios, connect with artists, and unique works created just for you.
+				</p>
+				<a href="#artist-waitlist"
+					class="px-12 md:px-28 py-1 md:py-2 text-white from-[#a04ef7] to-[#e467ee] bg-gradient-to-tr rounded-sm hover:scale-95  text-lg font-semibold transition-all ease-in-out duration-200">
+					Get Early Access
+				</a>
+			</div>
+		</section>
+    <section id='vision-and-mission' class="py-6 md:py-10 lg:py-20 bg-[#e467ee]">
+			<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start text-center md:text-left">
+				<!-- Vision -->
+				<div class="bg-[#f1e2ff] shadow-sm p-6 rounded-xl" data-aos="zoom-in-up" data-aos-duration="500">
+					<h2 class="text-2xl md:text-4xl font-bold text-[#4B0082] mb-4">
+						Our Vision
+					</h2>
+					<p class="text-sm md:text-lg leading-relaxed text-gray-700 max-w-md">
+						To create a world where every artist finds an audience, and every
+						art lover discovers inspiration that feels personal and
+						unforgettable.
+					</p>
+				</div>
 
-      <!-- Text Content -->
-      <div data-aos="fade-down" data-aos-duration="1000"
-        class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
-        <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold mb-4">
-          Discover Art You’ll Truly Love
-        </h1>
-        <p class="text-sm lg:text-xl max-w-2xl mb-6">
-          Join CompletelyArt to explore authentic artworks, connect with
-          trusted artists, and find pieces that inspire your space. Be among
-          the first to gain access to curated collections and exclusive art
-          opportunities
-        </p>
-        <a href="#artist-waitlist"
-          class="px-6 py-3 bg-[#4B0082] text-white hover:bg-[#FFB085] hover:text-[#4b0082] rounded-full text-lg font-semibold">
-          Get Early Access
-        </a>
-      </div>
-    </section>
-    <section class="py-4 md:py-10 lg:py-20 bg-[#FAF9F6]">
-      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start text-center md:text-left">
-        <!-- Vision -->
-        <div class="shadow-sm p-6 rounded-xl" data-aos="zoom-in-up" data-aos-duration="1000">
-          <h2 class="text-3xl md:text-4xl font-bold text-[#4B0082] mb-4">
-            Our Vision
-          </h2>
-          <p class="text-lg leading-relaxed text-gray-700 max-w-md">
-            To create a world where every artist finds an audience, and every
-            art lover discovers inspiration that feels personal and
-            unforgettable.
-          </p>
-        </div>
+				<!-- Mission -->
+				<div class="bg-[#f1e2ff] shadow-sm p-6 rounded-xl" data-aos="zoom-in-up" data-aos-duration="500">
+					<h2 class="text-2xl md:text-4xl font-bold text-[#4B0082] mb-4">
+						Our Mission
+					</h2>
+					<p class="text-sm md:text-lg leading-relaxed text-gray-700 max-w-md">
+						To empower artists by giving them visibility, while helping art
+						lovers connect with authentic, original works they’ll truly
+						treasure.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="py-4 md:py-10 lg:py-20 bg-[#f1e2ff] md:px-6 px-3">
+			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<!-- Founder Photo -->
+				<div class="relative w-full h-[400px] xxs:h-[450px] md:w-[500px] md:h-[600px] rounded-2xl overflow-hidden shadow-lg group">
+					<!-- Founder Image -->
+					<img src="./assets/images/founder's image.jpg" alt="Founder" class="w-full h-full object-cover" />
 
-        <!-- Mission -->
-        <div class="shadow-sm p-6 rounded-xl" data-aos="zoom-in-up" data-aos-duration="1000">
-          <h2 class="text-3xl md:text-4xl font-bold text-[#4B0082] mb-4">
-            Our Mission
-          </h2>
-          <p class="text-lg leading-relaxed text-gray-700 max-w-md">
-            To empower artists by giving them visibility, while helping art
-            lovers connect with authentic, original works they’ll truly
-            treasure.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="py-4 md:py-10 lg:py-20 bg-[#FAF9F6] px-6" id="about">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <!-- Founder Photo -->
-        <div class="relative w-[500px] h-[600px] rounded-2xl overflow-hidden shadow-lg group">
-          <!-- Founder Image -->
-          <img src="./assets/images/founder's image.jpg" alt="Founder" class="w-full h-full object-cover" />
-
-          <!-- Hover Overlay -->
-          <div
-            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <div class="">
-              <p class="text-white text-sm font-bold text-center">
-                Meet Our Founder
-              </p>
-              <p class="text-white text-2xl font-bold text-center">
-                Mr Eyitayo Olayeni-Dejo
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Founder Story -->
-        <div data-aos="fade-left" data-aos-duration="1000">
-          <h2 class="text-3xl font-bold text-[#4B0082] mb-4">
-            The Story Behind CompletelyArt
-          </h2>
-          <p class="text-lg text-gray-700 leading-relaxed mb-6">
-            CompletelyArt was born from a simple but powerful idea: art should
-            connect people, not confuse them.
-            <span class="font-semibold">Eyitayo Olayeni-Dejo</span>, an avid art
-            lover and advocate for creativity, noticed a very recurring challenge,
-            collectors often didn’t know which artists to trust, while
-            talented creators struggled to find clients who truly valued their
-            work. Frustrated by this divide, He set out to build a platform
-            where both sides could meet with confidence and purpose.
-          </p>
-          <p class="text-lg text-gray-700 leading-relaxed mb-6">
-            Today, CompletelyArt is more than just a gallery, it’s a space
-            where art lovers can discover pieces they can trust, and artists
-            can showcase their creations to the right audience. Every
-            interaction, every piece displayed, and every connection made is
-            guided by a single mission: to make buying and selling art safe,
-            seamless, and inspiring for everyone.
-          </p>
-          <p class="text-lg text-gray-700 leading-relaxed">
-            What started as a small idea has grown into a movement, bridging
-            the gap between creators and collectors, and building a community
-            where art truly belongs to everyone who loves it.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="py-4 md:py-5 lg:py-10 w-full max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8" data-aos="fade-up"
-      data-aos-duration="1500">
-      <div id="artist-waitlist" class="bg-[#4B0082] mx-auto w-full max-w-4xl py-10 sm:py-14 px-4 sm:px-8 rounded-2xl">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
-          Be Part of the Journey
-        </h2>
-
-        <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-200 mb-8 leading-relaxed">
-          Whether you’re an artist ready to showcase your work or a collector
-          looking for inspiration, join our waitlist today and help shape the
-          future of CompletelyArt.
-        </p>
-
-        <!-- Email Input + Button -->
-        <form id="buyer-waitlist-form" class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4" method="post"
-          action="https://completelyart.us1.list-manage.com/subscribe/post?u=4b5d3fbd24101f9efefcb0228&id=8477ddd1d0&f_id=004f66e0f0"
-          target="_self" novalidate>
-          <!-- Email Input -->
-          <input type="email" name="EMAIL" placeholder="Enter your email"
-            class="flex-1 px-4 py-3 rounded-full bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FFB085] text-sm sm:text-base"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
-
-          <!-- Hidden fields (Mailchimp requires these) -->
-          <input type="hidden" name="tags" value="5778951,5778952" />
-          <div aria-hidden="true" style="position: absolute; left: -5000px">
-            <input type="text" name="b_4b5d3fbd24101f9efefcb0228_8477ddd1d0" tabindex="-1" value="" />
-          </div>
-
-          <!-- Custom redirect after submission -->
-          <input type="hidden" name="redirect" value="https://completelyart.ng" />
-
-          <!-- Button -->
-          <button type="submit"
-            class="px-6 py-3 bg-[#CDA4DE] text-[#4B0082] rounded-full text-sm sm:text-base md:text-lg font-semibold shadow-md transition-all duration-300 hover:bg-[#FFB085] hover:text-[#4b0082]">
-            Join Waitlist
-          </button>
-        </form>
-      </div>
-    </section>
-    <section id="testimonials" class="py-14 w-full bg-[#bb88eb]">
-			<div class="max-w-7xl mx-auto ">
-				<h1 class="text-4xl font-bold text-center text-[#3c096c] capitalize">Testimonials</h1>
-				<div class="relative mt-6 rounded-b-xl mx-auto w-[600px] h-[288px] bg-[#f1e2ff] shadow-[#3c096c]/40 shadow-md ">
-					<div class="bg-[#3c096c] h-[90px]">
-						<img src="/assets/images/user-image.webp" loading="lazy" alt="user-image"
-							class=" absolute top-10 left-1/2 -translate-x-1/2 size-28 object-cover rounded-full">
-					</div>
-					<div class="px-10 py-10 text-center my-12">
-						<h3 class="text-2xl font-bold">Artist</h3>
-						<p class="text-lg">I got the perfect portrait commissioned for my home.</p>
+					<!-- Hover Overlay -->
+					<div
+						class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						<div class="">
+							<p class="text-[#f1e2ff] text-sm font-bold text-center">
+								Meet Our Founder
+							</p>
+							<p class="text-[#f1e2ff] text-lg md:text-2xl font-bold text-center">
+								Mr Eyitayo Olayeni-Dejo
+							</p>
+						</div>
 					</div>
 				</div>
+			<div data-aos="fade-left" data-aos-duration="500" 
+				class="text-[#3c096c] text-center md:text-left">
+            <h2 class="text-center md:text-left text-lg sm:text-xl md:text-3xl font-bold text-[#3c096c] mb-4">
+              The Story Behind CompletelyArt
+            </h2>
+            <p class="text-sm text-center md:text-left md:text-lg text-[#3c096c] leading-relaxed mb-6">
+              CompletelyArt was born from a simple but powerful idea: art should
+              connect people, not confuse them.
+              <span class="font-semibold">Eyitayo Olayeni-Dejo</span>, an avid art
+              lover and advocate for creativity, noticed a very recurring challenge, 
+			  collectors often didn’t know which artists to trust, while
+              talented creators struggled to find clients who truly valued their
+              work. Frustrated by this divide, He set out to build a platform
+              where both sides could meet with confidence and purpose.
+            </p>
+            <p class="text-sm md:text-lg leading-relaxed mb-6">
+              Today, CompletelyArt is more than just a gallery, it’s a space
+              where art lovers can discover pieces they can trust, and artists
+              can showcase their creations to the right audience. Every
+              interaction, every piece displayed, and every connection made is
+              guided by a single mission: to make buying and selling art safe,
+              seamless, and inspiring for everyone.
+            </p>
+            <p class="text-sm md:text-lg leading-relaxed">
+              What started as a small idea has grown into a movement, bridging
+              the gap between creators and collectors, and building a community
+              where art truly belongs to everyone who loves it.
+            </p>
+          </div>
+			</div>
+		</section>
+   <section class="h-auto py-4 md:py-5 lg:py-10 w-full max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8"
+			data-aos="zoom-in" data-aos-duration="500">
+			<div id="artist-waitlist"
+				class="bg-[#3c096c] mx-auto w-full max-w-4xl py-10 sm:py-14 px-4 sm:px-8 rounded-2xl">
+				<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#e467ee] mb-6">
+					Be Part of the Journey
+				</h2>
+
+				<p class="max-w-2xl mx-auto text-base sm:text-lg text-[#e467ee] mb-8 leading-relaxed">
+					Whether you’re a passionate collector or just looking for that perfect piece, join our waitlist today to discover inspiring artworks, connect directly with artists, and help shape the future of CompletelyArt.
+				</p>
+
+				<!-- Email Input + Button -->
+				<form id="artist-waitlist-form" class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4" method="post"
+					action="https://completelyart.us1.list-manage.com/subscribe/post?u=4b5d3fbd24101f9efefcb0228&id=8477ddd1d0&f_id=004f66e0f0"
+					target="_self" novalidate>
+					<!-- Email Input -->
+					<input type="email" name="EMAIL" placeholder="Enter your email"
+						class="flex-1 px-4 py-3 rounded-sm bg-white text-[#3c096c] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#bb88eb] text-sm sm:text-base"
+						required />
+
+					<!-- Hidden fields (Mailchimp requires these) -->
+					<input type="hidden" name="tags" value="5778951,5778952" />
+					<div aria-hidden="true" style="position: absolute; left: -5000px">
+						<input type="text" name="b_4b5d3fbd24101f9efefcb0228_8477ddd1d0" tabindex="-1" value="" />
+					</div>
+
+					<!-- Custom redirect after submission -->
+					<input type="hidden" name="redirect" value="https://completelyart.ng" />
+
+					<!-- Button -->
+					<button type="submit"
+						class="px-6 py-2 from-[#a04ef7] to-[#e467ee] bg-gradient-to-tr bg-[#bb88eb] text-[#3c096c] rounded-sm text-sm sm:text-base md:text-lg font-semibold shadow-md transition-all duration-300 hover:bg-[#a04ef7] hover:text-[#3c096c]">
+						Join Waitlist
+					</button>
+				</form>
+			</div>
+		</section>
+    <section id="testimonials" class="py-14 w-full bg-[#bb88eb]">
+			<div class="max-w-7xl mx-auto px-3 ">
+				<h1 class="text-2xl md:text-4xl font-bold text-center text-[#3c096c] capitalize">Testimonials</h1>
+				<div class="relative mt-6 rounded-b-xl mx-auto  md:w-[600px] h-[250px] md:h-[288px] bg-[#f1e2ff] shadow-[#3c096c]/40 shadow-sm ">
+					<div class="bg-[#3c096c] h-[60px] md:h-[90px]">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" loading="lazy" alt="user-image"
+							class=" absolute top-5 md:top-10 left-1/2 -translate-x-1/2 size-24 md:size-28 object-cover rounded-full">
+					</div>
+					<div class="px-10 py-12 md:py-10 text-center my-12">
+						<h3 class="text-lg md:text-2xl font-bold text-[#3c096c]">Sophia Bennett</h3>
+						<p class="text-sm md:text-lg text-[#3c096c]">I got the perfect portrait commissioned for my home.</p>
+					</div>
+				</div>
+        <div class="mt-6 flex justify-center ">
+          <a href="./artist-subscription.html"
+						class="mx-auto px-12 md:px-28 py-1 md:py-2 border-[2px]  rounded-sm hover:bg-white/10  hover:scale-95 text-lg font-semibold transition-all duration-200 ease-in-out">
+						Join as an Artist
+					</a>
+        </div>
 			</div>
 		</section>
   </main>
@@ -259,7 +254,9 @@
   </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once:true
+    });
 
     const form = document.querySelector("#buyer-waitlist-form");
 
@@ -290,5 +287,4 @@
   </script>
   <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-
 </html>
