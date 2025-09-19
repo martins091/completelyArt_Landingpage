@@ -171,11 +171,11 @@
 				<!-- Email Input + Button -->
 				<form id="artist-waitlist-form" class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4" method="post"
 					action="https://completelyart.us1.list-manage.com/subscribe/post?u=4b5d3fbd24101f9efefcb0228&id=8477ddd1d0&f_id=004e66e0f0"
-					target="_self" novalidate>
+					target="_self" >
 					<!-- Email Input -->
 					<input type="email" name="EMAIL" placeholder="Enter your email"
 						class="flex-1 px-4 py-3 rounded-sm bg-white text-[#3c096c] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#bb88eb] text-sm sm:text-base"
-						required />
+						required  pattern=".*\S.*"/>
 
 					<!-- Hidden fields (Mailchimp requires these) -->
 					<input type="hidden" name="tags" value="5778951,5778952" />
@@ -284,6 +284,5 @@
 			}
 		})
 	</script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
